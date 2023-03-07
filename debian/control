@@ -25,6 +25,7 @@ Build-Depends:
  meson,
  pkg-config,
  wayland-protocols,
+ wayfire-dev
 Standards-Version: 4.6.0
 Rules-Requires-Root: no
 Homepage: https://wayfire.org/
