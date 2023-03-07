@@ -1,0 +1,41 @@
+Source: wfplug-winshadows
+Section: x11
+Priority: optional
+Maintainer: Simon Long <simon@raspberrypi.com>
+Build-Depends:
+ cmake,
+ debhelper-compat (= 13),
+ doctest-dev <!nocheck>,
+ libcairo2-dev,
+ libdrm-dev,
+ libevdev-dev,
+ libfreetype-dev,
+ libgl-dev,
+ libglm-dev,
+ libinput-dev,
+ libjpeg-dev,
+ libpango1.0-dev,
+ libpixman-1-dev,
+ libpng-dev,
+ libwayland-dev,
+ libwf-config-dev,
+ libwlroots-dev,
+ libxkbcommon-dev,
+ libxml2-dev,
+ meson,
+ pkg-config,
+ wayland-protocols,
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+Homepage: https://wayfire.org/
+Vcs-Git: https://github.com/WayfireWM/wayfire-plugins-extra.git
+
+Package: wfplug-winshadows
+Architecture: any
+Depends:
+ ${misc:Depends},
+ wayfire,
+Description: Winshadows plugin for wayfire
+ The winshadows plugin for wayfire, taken from wayfire-plugins-extra
+ .
+ Packaged for Debian - no other changes

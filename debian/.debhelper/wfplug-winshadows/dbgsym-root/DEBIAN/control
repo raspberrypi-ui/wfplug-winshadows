@@ -1,0 +1,12 @@
+Package: wfplug-winshadows-dbgsym
+Source: wfplug-winshadows
+Version: 0.1
+Auto-Built-Package: debug-symbols
+Architecture: arm64
+Maintainer: Simon Long <simon@raspberrypi.com>
+Installed-Size: 309
+Depends: wfplug-winshadows (= 0.1)
+Section: debug
+Priority: optional
+Description: debug symbols for wfplug-winshadows
+Build-Ids: ad37c043481732f56264e11df05d1d6b26c10fb8
