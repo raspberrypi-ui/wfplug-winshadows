@@ -13,7 +13,7 @@ class decoration_shadow_t {
         ~decoration_shadow_t();
 
         void render(const framebuffer_t& fb, wf::point_t origin, const geometry_t& scissor, const bool glow);
-        void resize(const int width, const int height);
+        void resize(const int width, const int height, const bool borders);
         wf::region_t calculate_region() const;
         wf::geometry_t get_geometry() const;
         bool is_glow_enabled() const;
@@ -36,6 +36,8 @@ class decoration_shadow_t {
         wf::option_wrapper_t<wf::color_t> glow_color_option { "winshadows/glow_color" };
         wf::option_wrapper_t<int> glow_radius_option { "winshadows/glow_radius" };
         wf::option_wrapper_t<double> glow_emissivity_option { "winshadows/glow_emissivity" };
+
+        wf::option_wrapper_t<int> border_size{"pixdecor/border_size"};
 
         static const std::string shadow_vert_shader;
         static const std::string shadow_frag_shader;

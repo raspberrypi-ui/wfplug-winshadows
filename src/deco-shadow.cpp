@@ -110,12 +110,13 @@ wf::geometry_t wf::winshadows::decoration_shadow_t::get_geometry() const {
     return outer_geometry;
 }
 
-void wf::winshadows::decoration_shadow_t::resize(const int window_width, const int window_height) {
+void wf::winshadows::decoration_shadow_t::resize(const int window_width, const int window_height, const bool borders) {
+    int bmod = borders ? border_size : 0;
     window_geometry =  {
-        0,
-        0,
-        window_width,
-        window_height
+        bmod,
+        bmod,
+        window_width - 2 * bmod,
+        window_height - 2 * bmod
     };
 
     shadow_geometry = {
