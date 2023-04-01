@@ -22,7 +22,7 @@
 		<option name="shadow_radius" type="int">
 			<_short>Shadow radius</_short>
 			<_long>Sets the shadow radius in pixels.</_long>
-			<default>60</default>
+			<default>20</default>
 		</option>
 		<option name="clip_shadow_inside" type="bool">
 			<_short>Clip shadow to window rectangle</_short>
@@ -32,7 +32,7 @@
 		<option name="vertical_offset" type="int">
 			<_short>Vertical offset</_short>
 			<_long>Number of pixels to shift the shadow by in vertical direction.</_long>
-			<default>5</default>
+			<default>0</default>
 		</option>
 		<option name="horizontal_offset" type="int">
 			<_short>Horizontal offset</_short>
