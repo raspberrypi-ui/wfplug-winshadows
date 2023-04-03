@@ -1,3 +1,9 @@
+wfplug-winshadows (0.2) boookworm; urgency=medium
+
+  * Shrink shadows for invisible borders
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 03 Apr 2023 09:15:22 +0100
+
 wfplug-winshadows (0.1) bookworm; urgency=medium
 
   * Initial release.
