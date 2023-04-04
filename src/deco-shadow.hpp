@@ -36,6 +36,7 @@ class decoration_shadow_t {
         wf::option_wrapper_t<wf::color_t> glow_color_option { "winshadows/glow_color" };
         wf::option_wrapper_t<int> glow_radius_option { "winshadows/glow_radius" };
         wf::option_wrapper_t<double> glow_emissivity_option { "winshadows/glow_emissivity" };
+        wf::option_wrapper_t<bool> force_shadows{"winshadows/force_shadows"};
 
         wf::option_wrapper_t<int> border_size{"pixdecor/border_size"};
 

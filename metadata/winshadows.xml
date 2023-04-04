@@ -57,5 +57,10 @@
 			<max>1.0</max>
 			<precision>0.1</precision>
 		</option>
+		<option name="force_shadows" type="bool">
+			<_short>Always show a shadow</_short>
+			<_long>Forces shadow borders to zero to prevent hiding by the window.</_long>
+			<default>false</default>
+		</option>
 	</plugin>
 </wayfire>
