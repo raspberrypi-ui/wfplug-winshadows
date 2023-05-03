@@ -1,3 +1,9 @@
+wfplug-winshadows (0.3) bookworm; urgency=medium
+
+  * Rebuild for Wayfire rpt13
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 03 May 2023 12:42:31 +0100
+
 wfplug-winshadows (0.2) boookworm; urgency=medium
 
   * Shrink shadows for invisible borders
