@@ -56,7 +56,7 @@ bool shadow_decoration_surface::accepts_input( int32_t, int32_t )
 
 void shadow_decoration_surface::update_geometry() {
     wf::geometry_t view_geometry = view->get_wm_geometry();
-    shadow.resize(view_geometry.width, view_geometry.height, view->should_be_decorated ());
+    shadow.resize(view_geometry.width, view_geometry.height, view->should_be_decorated () || this->always_decorate.matches (view));
 
     wf::point_t frame_offset = wf::origin(view->get_wm_geometry()) - wf::origin(view->get_output_geometry());
 

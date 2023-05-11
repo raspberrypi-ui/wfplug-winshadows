@@ -10,6 +10,7 @@
 #include <wayfire/opengl.hpp>
 #include <wayfire/core.hpp>
 #include <wayfire/signal-definitions.hpp>
+#include <wayfire/matcher.hpp>
 #include "deco-shadow.hpp"
 
 namespace wf::winshadows {
@@ -21,6 +22,8 @@ class shadow_decoration_surface : public wf::surface_interface_t {
     wf::geometry_t surface_geometry;
 
     wayfire_view view;
+
+    wf::view_matcher_t always_decorate{"pixdecor/always_decorate"};
 
     int width = 100, height = 100;
     wf::winshadows::decoration_shadow_t shadow;
